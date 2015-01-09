@@ -1,0 +1,767 @@
+---
+title: Projects
+---
+
+<div class="media">
+  <div class="media-body">
+    Here's a detailed&mdash;albeit not exhaustive&mdash;account of the professional, 
+    open source and side projects I've worked on over the years
+  </div>
+</div>
+
+<div class="row marketing projects">
+  <div class="col-lg-12">
+
+    <h4>Europass/ESCO Integration <small>2014&ndash;Present</small></h4>
+    <div class="tags">
+      <span class="label label-info">Europass</span> 
+      <span class="label label-info">Tech Management</span> <span class="label label-info">Interoperability</span>
+      <span class="label label-info">REST</span>
+    </div>
+    <p>
+      Currently coordinating the integration of Europass with ESCO utilising the 
+      <%= link_to 'ESCO APIs', 'https://ec.europa.eu/esco/escopedia/-/escopedia/ESCO_API', :target => '_blank' %>.  
+    </p>
+
+    <h4>dimzava.eu <small>2008&ndash;Present</small></h4>
+    <div class="tags">
+      <span class="label label-warning">Side Project</span> <span class="label label-info">Middleman</span>
+      <span class="label label-info">Twitter Bootstrap</span> <span class="label label-info">GitHub Pages</span>
+    </div>
+    <p>
+      The web site you are currently reading. It has gone through many phases since 2008 when it was first created,
+      but the latest version is built with the awesome <%= link_to 'Middleman', 'https://middlemanapp.com/', :target => '_blank' %>
+      static site generator and the (ex Twitter) Bootstrap HTML/CSS/JS framework and is served via 
+      <%= link_to 'GitHub Pages', 'https://pages.github.com/', :target => '_blank' %>.
+    </p>
+
+    <h4>Europass Online Editor Revamp <small>2014</small></h4>
+    <div class="tags">
+      <span class="label label-info">Europass</span> 
+      <span class="label label-info">Tech Management</span> <span class="label label-info">Scrum</span>
+    </div>
+    <p>
+      Technical manager and Scrum master of a major project, which resulted in the brand new 
+      <%= link_to 'Europass Online Editor', 'https://europass.cedefop.europa.eu/editors', :target => '_blank' %> (launched October 2014).
+      The main objectives of this project were to improve the usability of the editor by removing unnecessary features and simplifying
+      the user interface, make it responsive so that it can be accessed by mobile devices and make it easy to import/export
+      Europass documents from/to the cloud via custom integrations with popular cloud storage services (currently Google Drive, 
+      Dropbox, OneDrive).
+    </p>
+
+    <h4>Europass Accessibility <small>2014</small></h4>
+    <div class="tags">
+      <span class="label label-info">Europass</span> 
+      <span class="label label-info">Tech Management</span> <span class="label label-info">WAI</span>
+    </div>
+    <p>
+      Oversaw a series of accessibility improvements to the
+      <%= link_to 'Europass portal', 'http://europass.cedefop.europa.eu', :target => '_blank' %> 
+      successfully leading to <%= link_to 'WCAG 2.0', 'http://www.w3.org/TR/WCAG20/', :target => '_blank' %> (Level A) 
+      compliance and the development of a <%= link_to 'new version', 'http://europass.cedefop.europa.eu/accessibility/en/cv-template/', :target => '_blank' %> 
+      of the Europass CV template and instructions specifically targeted at visually impaired users.
+    </p>
+
+    <h4>Log Aggregation &amp; Analytics Server <small>2014</small></h4>
+    <div class="tags">
+      <span class="label label-info">Europass</span>
+      <span class="label label-info">Ops</span> <span class="label label-info">Elasticsearch</span>
+      <span class="label label-info">Logstash</span> <span class="label label-info">Kibana</span>
+    </div>
+    <p>
+      Installed, set up and configured the <%= link_to 'Elasticsearch ELK Stack', 'http://www.elasticsearch.org/overview/', :target => '_blank' %>
+      as a centralised logging server solution for Europass. Its purpose is to automatically collect thousands of log events per day 
+      from tens of servers, process them, store them in a structured way and make them easily searchable, thus providing better anomaly
+      detection capabilities and insights into the problems faced by users.
+    </p>    
+
+    <h4>Bulk XML Pretty-printing <small>2014</small></h4>
+    <div class="tags">
+      <span class="label label-info">Europass</span> <span class="label label-info">Dev</span> 
+      <span class="label label-info">Groovy</span> <span class="label label-info">XML</span>
+    </div>
+    <p>
+      Developed a simple Groovy command-line program, which parses all XML documents found in 
+      a given directory and pretty-prints them in bulk. 
+    </p>
+
+    <h4>Europass Interoperability Demo <small>2014</small></h4>
+    <div class="tags">
+      <span class="label label-warning">Side Project</span> <span class="label label-success">Open Source</span> 
+      <span class="label label-info">Europass</span>
+      <span class="label label-info">Dev</span> <span class="label label-info">Groovy</span>
+      <span class="label label-info">Ratpack</span> <span class="label label-info">iText</span> 
+      <span class="label label-info">wslite</span> <span class="label label-info">Gradle</span> <span class="label label-info">H2</span>
+    </div>
+    <p>
+      Built in an afternoon a quick and dirty Ratpack app to demonstrate how the various interoperability options provided by Europass
+      can be used in practice. The application has been open sourced at 
+      <%= link_to 'https://github.com/dimzava/europass-interop-demo', 'https://github.com/dimzava/europass-interop-demo', :target => '_blank' %>.
+    </p>
+
+    <h4>Europass2Spreadsheet, v2 (Spring Boot) <small>2014&ndash;Present</small></h4>
+    <div class="tags">
+      <span class="label label-warning">Side Project</span> <span class="label label-info">Java SE</span> <span class="label label-info">Spring Boot</span> 
+      <span class="label label-info">Spring AMQP</span> <span class="label label-info">CloudAMQP</span> <span class="label label-info">Guava</span>
+      <span class="label label-info">Mailgun</span> <span class="label label-info">Heroku</span>
+    </div>
+    <p>
+      Rebuilt <%= link_to 'https://europass2spreadsheet.eu', 'https://europass2spreadsheet.eu', :target => '_blank' %>
+      from scratch using Spring Boot and Java 8, just for the fun of it :-). Currently experimenting with RabbitMQ, Spring AMQP and CloudAMQP
+      in an attempt to scale out the service on Heroku's free tier.
+    </p>
+
+    <h4>Europass2Spreadsheet, v1 (Ratpack) <small>2014</small></h4>
+    <div class="tags">
+      <span class="label label-warning">Side Project</span>
+      <span class="label label-info">Groovy</span> <span class="label label-info">Ratpack</span>
+      <span class="label label-info">iText</span> <span class="label label-info">JETT</span> 
+      <span class="label label-info">Apache POI</span> <span class="label label-info">wslite</span>
+      <span class="label label-info">Gradle</span> <span class="label label-info">Mailgun</span> <span class="label label-info">Heroku</span>
+    </div>
+    <p>
+      Created and launched <%= link_to 'https://europass2spreadsheet.eu', 'https://europass2spreadsheet.eu', :target => '_blank' %>,
+      a free online service for converting Europass CVs to Excel spreadsheets via email.
+    </p>
+
+    <h4>ErrCode <small>2014</small></h4>
+    <div class="tags">
+      <span class="label label-warning">Side Project</span> <span class="label label-success">Open Source</span> 
+      <span class="label label-info">Europass</span> <span class="label label-info">Groovy</span>
+      <span class="label label-info">Ratpack</span> <span class="label label-info">Ant JSch</span>
+      <span class="label label-info">Groovy VFS</span> <span class="label label-info">Jackson</span>
+      <span class="label label-info">HikariCP</span> <span class="label label-info">Gradle</span>
+      <span class="label label-info">MySQL</span>
+    </div>
+    <p>
+      Designed and implemented a simple web application, which helps the Europass technical support team to easily troubleshoot
+      problems reported by end users. The app downloads log files from remote servers (via SCP and Samba), extracts stack traces 
+      based on a specific string pattern, processes them and stores them in a MySQL database. Technical support
+      can then query the database for a specific error code (provided by the user) and get back the corresponding stack trace
+      details via an intuitive web interface. This application has been open sourced at 
+      <%= link_to 'https://github.com/dimzava/errcode', 'https://github.com/dimzava/errcode', :target => '_blank' %>.
+    </p>
+
+    <h4>Ratpack TechEmpower Benchmarks <small>2014</small></h4>
+    <div class="tags">
+      <span class="label label-warning">Side Project</span> <span class="label label-success">Open Source</span>
+      <span class="label label-info">Groovy</span> <span class="label label-info">Ratpack</span>
+      <span class="label label-info">Jackson</span> <span class="label label-info">Spock</span>
+      <span class="label label-info">HikariCP</span> <span class="label label-info">Gradle</span>
+      <span class="label label-info">MySQL</span> <span class="label label-info">H2</span>
+      <span class="label label-info">Performance Tuning</span> 
+    </div>
+    <p>
+      Implemented the <%= link_to 'Ratpack/Groovy portion', 'https://github.com/ratpack/FrameworkBenchmarks/tree/ratpack-dev/frameworks/Java/ratpack', :target => '_blank' %> 
+      of the <%= link_to 'TechEmpower Framework Benchmarks', 'https://www.techempower.com/benchmarks/', :target => '_blank' %> 
+      in close cooperation with the Ratpack team.
+    </p>
+
+    <h4>Europass Cover Letter <small>2014</small></h4>
+    <div class="tags">
+      <span class="label label-info">Europass</span>
+      <span class="label label-info">Tech Management</span> 
+      <span class="label label-info">Scrum</span>
+    </div>
+    <p>
+      Technical manager and Scrum master for the development of the 
+      <%= link_to 'Cover Letter', 'https://europass.cedefop.europa.eu/editors/en/cl/compose', :target => '_blank' %>, 
+      a new document and editor added to the Europass portfolio in April 2014. Active involvement in all stages, from
+      inception through to delivery into production.
+    </p>
+
+    <h4>AWStats/Google Analytics Comparison <small>2014</small></h4>
+    <div class="tags">
+      <span class="label label-info">Europass</span>
+      <span class="label label-info">Dev</span> 
+      <span class="label label-info">Groovy</span> <span class="label label-info">SQL Server</span>
+    </div>
+    <p>
+      Developed a Groovy command-line program, which verifies the results of a statistics migration project
+      from a legacy AWStats solution to Google Analytics. It works by querying two different databases (one containing
+      AWStats data and the other one containing Google Analytics data), comparing the results and
+      printing text-based reports pinpointing differences between the two data sources (diffs in 
+      absolute numbers, percentages, etc.)
+    </p>
+
+    <h4>EURES/Europass REST API Integration <small>2014</small></h4>
+    <div class="tags">
+      <span class="label label-info">Europass</span>
+      <span class="label label-info">Tech Management</span> 
+      <span class="label label-info">Interoperability</span> <span class="label label-info">REST</span>
+      <span class="label label-info">XML</span> <span class="label label-info">JAXB</span>
+    </div>
+    <p>
+      Led the efforts of the second generation of interoperability between Europass and 
+      <%= link_to 'EURES', 'https://ec.europa.eu/eures', :target => '_blank' %> (The European Job Mobility Portal). 
+      Taking advantage of the Europass XML, Europass users are now able to create a EURES profile/CV by simply 
+      uploading a Europass CV to the EURES portal. Likewise, EURES users can export their profile/CV into the
+      Europass format, using the Europass REST API under the hood. A JAXB-based client was also developed
+      in frames of this project, to ease the consumption of the Europass REST services by Java clients.
+    </p>
+
+    <h4>New Europass Language Passport <small>2013</small></h4>
+    <div class="tags">
+      <span class="label label-info">Europass</span>
+      <span class="label label-info">Tech Management</span> 
+      <span class="label label-info">Scrum</span>
+    </div>
+    <p>
+      &nbsp;
+    </p>
+
+    <h4>Bulk XML Validation <small>2013</small></h4>
+    <div class="tags">
+      <span class="label label-info">Europass</span>
+      <span class="label label-info">Dev</span> 
+      <span class="label label-info">Groovy</span> <span class="label label-info">XML</span>
+    </div>
+    <p>
+      Developed a simple Groovy command-line program, which parses all XML documents found in a directory
+      and validates them against a given XSD, in bulk. 
+    </p>
+
+    <h4>Europass Remote Upload Web Service <small>2013</small></h4>
+    <div class="tags">
+      <span class="label label-info">Europass</span>
+      <span class="label label-info">Tech Management</span> 
+      <span class="label label-info">Scrum</span> <span class="label label-info">Interoperability</span>
+    </div>
+    <p>
+      <%= link_to 'http://interop.europass.cedefop.europa.eu/web-services/remote-upload', 
+                  'http://interop.europass.cedefop.europa.eu/web-services/remote-upload/', :target => '_blank' %>
+    </p>
+
+    <h4>Europass/ESCO Integration Proof-of-concept <small>2013</small></h4>
+    <div class="tags">
+      <span class="label label-info">Europass</span>
+      <span class="label label-info">Tech Management</span> 
+      <span class="label label-info">Scrum</span> <span class="label label-info">Interoperability</span>
+    </div>
+    <p>
+      &nbsp;
+    </p>
+
+    <h4>Service Health Check Scripts <small>2013</small></h4>
+    <div class="tags">
+      <span class="label label-info">Europass</span> 
+      <span class="label label-info">Dev</span> <span class="label label-info">Groovy</span>
+      <span class="label label-info">wslite</span>
+    </div>
+    <p>
+      &nbsp;
+    </p>
+
+    <h4>Europass REST API <small>2013</small></h4>
+    <div class="tags">
+      <span class="label label-info">Europass</span>
+      <span class="label label-info">Tech Management</span> 
+      <span class="label label-info">Scrum</span> <span class="label label-info">REST</span> 
+      <span class="label label-info">XML</span> <span class="label label-info">JSON</span>
+    </div>
+    <p>
+      <%= link_to 'http://interop.europass.cedefop.europa.eu/web-services/rest-api-summary', 
+                  'http://interop.europass.cedefop.europa.eu/web-services/rest-api-summary/', :target => '_blank' %>
+    </p>
+
+    <h4>Europass Interoperability Portal <small>2013</small></h4>
+    <div class="tags">
+      <span class="label label-info">Europass</span>
+      <span class="label label-info">Dev</span> 
+      <span class="label label-info">Interoperability</span> <span class="label label-info">Middleman</span>
+      <span class="label label-info">Ruby</span> <span class="label label-info">Twitter Bootstrap</span>
+      <span class="label label-info">Vagrant</span>
+    </div>
+    <p>
+      Designed and implemented <%= link_to 'http://interop.europass.cedefop.europa.eu', 'http://interop.europass.cedefop.europa.eu', :target => '_blank' %>, 
+      a developer-focused portal with technical information concerning 
+      Europass Interoperability (XML and JSON Schemata, REST and SOAP web services, API documentation, sample applications, etc.).
+    </p>
+
+    <h4>Europass Disaster Recovery Infrastructure <small>2013</small></h4>
+    <div class="tags">
+      <span class="label label-info">Europass</span>
+      <span class="label label-info">Tech Management</span> <span class="label label-info">Ops</span> 
+    </div>
+    <p>
+      &nbsp;
+    </p>
+
+    <h4>LibreOffice Management Scripts <small>2012</small></h4>
+    <div class="tags">
+      <span class="label label-info">Europass</span>
+      <span class="label label-info">Dev</span> 
+      <span class="label label-info">Groovy</span>
+    </div>
+    <p>
+      &nbsp;
+    </p>
+
+    <h4>New Europass CV/European Skills Passport <small>2012</small></h4>
+    <div class="tags">
+      <span class="label label-info">Europass</span>
+      <span class="label label-info">Tech Management</span>  
+      <span class="label label-info">Scrum</span>
+    </div>
+    <p>
+      &nbsp;
+    </p>
+
+    <h4>Server and DB Migration Projects <small>2012</small></h4>
+    <div class="tags">
+      <span class="label label-info">Europass</span> <span class="label label-info">Ops</span>
+    </div>
+    <p>
+      &nbsp;
+    </p>
+
+    <h4>Grails E-Shop <small>2012</small></h4>
+    <div class="tags">
+      <span class="label label-warning">Side Project</span> <span class="label label-info">Dev</span> <span class="label label-info">Grails</span>
+    </div>
+    <p>
+      An attempt to build a <%= link_to 'Grails-based E-Shop', 'https://github.com/dimzava/g-shop', :target => '_blank' %>. 
+      Project abandoned due to the lack of interest and gradual shift to other technologies.
+    </p>
+
+    <h4>RSVP App <small>2012</small></h4>
+    <div class="tags">
+      <span class="label label-warning">Side Project</span> <span class="label label-info">Dev</span> <span class="label label-info">Grails</span>
+      <span class="label label-info">Heroku</span> <span class="label label-info">PostgreSQL</span>
+    </div>
+    <p>
+      Built a Grails-based RSVP application in frames of my baby daughter's Christening event. The application
+      was deployed on Heroku using a PostgreSQL database.
+    </p>
+
+    <h4>Cache Warm-up Scripts <small>2012</small></h4>
+    <div class="tags">
+      <span class="label label-info">Europass</span>
+      <span class="label label-info">Dev</span> 
+      <span class="label label-info">Groovy</span>
+    </div>
+    <p>
+      Wrote some Groovy scripts for automatically warming up the caches of various Europass services.
+    </p>
+
+    <h4>Portal/CMS Revamp <small>2011</small></h4>
+    <div class="tags">
+      <span class="label label-info">Europass</span>
+      <span class="label label-info">Tech Management</span> 
+      <span class="label label-info">Data Migration</span>
+    </div>
+    <p>
+      &nbsp;
+    </p>
+
+    <h4>EMMS/AUTh Interoperability <small>2011</small></h4>
+    <div class="tags">
+      <span class="label label-info">Europass</span>
+      <span class="label label-info">Tech Management</span> 
+      <span class="label label-info">Interoperability</span>
+    </div>
+    <p>
+      &nbsp;
+    </p>
+
+    <h4>Properties2Excel Tool <small>2011</small></h4>
+    <div class="tags">
+      <span class="label label-info">Europass</span>
+      <span class="label label-info">Tech Management</span> 
+      <span class="label label-info">Java</span> <span class="label label-info">JExcelApi</span>
+    </div>
+    <p>
+      &nbsp;
+    </p>
+
+    <h4>Europass SOAP API v2 <small>2011</small></h4>
+    <div class="tags">
+      <span class="label label-info">Europass</span>
+      <span class="label label-info">Tech Management</span> 
+      <span class="label label-info">SOAP</span> <span class="label label-info">Web Services</span>
+    </div>
+    <p>
+      &nbsp;
+    </p>
+
+    <h4>EMMS Refinements <small>2010-2011</small></h4>
+    <div class="tags">
+      <span class="label label-info">Europass</span>
+      <span class="label label-info">Tech Management</span> 
+      <span class="label label-info">SOAP</span> <span class="label label-info">Web Services</span>
+    </div>
+    <p>
+      &nbsp;
+    </p>
+
+    <h4>EMMS Deployments <small>2010-2011</small></h4>
+    <div class="tags">
+      <span class="label label-info">Europass</span>
+      <span class="label label-info">Tech Management</span> 
+      <span class="label label-info">SOAP</span> <span class="label label-info">Web Services</span>
+    </div>
+    <p>
+      Managed the successful deployment, integration and testing of several instances of the 
+      Europass Mobility Management System (EMMS), coordinating with the business and IT representatives 
+      of 36 National Europass Centres, located in 34 countries across Europe (EMMS is a SOAP-based distributed, 
+      multi-node application used for issuing
+      <%= link_to 'Europass Mobility', 'http://europass.cedefop.europa.eu/en/documents/european-skills-passport/europass-mobility', :target => '_blank' %> 
+      documents).
+    </p>
+
+    <h4>Europass Job-matching Prototype <small>2010</small></h4>
+    <div class="tags">
+      <span class="label label-info">Europass</span>
+      <span class="label label-info">Tech Management</span> 
+      <span class="label label-info">Interoperability</span>
+    </div>
+    <p>
+      &nbsp;
+    </p>
+
+    <h4>Apache Log Format Converter <small>2010</small></h4>
+    <div class="tags">
+      <span class="label label-info">Europass</span>
+      <span class="label label-info">Dev</span> 
+      <span class="label label-info">Groovy</span> <span class="label label-info">Apache Logs</span>
+    </div>
+    <p>
+      Developed a simple Groovy program, which converts Apache SSL request logs to the 
+      <%= link_to 'combined log format', 'http://httpd.apache.org/docs/2.2/logs.html#combined', :target => '_blank' %>. 
+    </p>
+
+    <h4>High Availability Server Infrastructure <small>2010</small></h4>
+    <div class="tags">
+      <span class="label label-info">Europass</span>
+      <span class="label label-info">Ops</span> 
+      <span class="label label-info">HA</span> <span class="label label-info">Load-balancing</span>
+      <span class="label label-info">Tomcat</span> <span class="label label-info">Apache</span>
+      <span class="label label-info">mod_jk</span>  
+    </div>
+    <p>
+      Designed and implemented a high availability server architecture based on redundant Apache and Tomcat instances, 
+      which allowed Europass to painlessly scale from 800.000 visits/month and 400.000 document generations/month in 2010 
+      to more than 2.000.000 visits/month and 1.500.000 document generations/month in 2014.
+    </p>
+
+    <h4>EURES/Europass SOAP API Integration <small>2010</small></h4>
+    <div class="tags">
+      <span class="label label-info">Europass</span>
+      <span class="label label-info">Tech Management</span>
+      <span class="label label-info">Interoperability</span> <span class="label label-info">SOAP</span>
+    </div>
+    <p>
+      &nbsp;
+    </p>
+
+    <h4>Europass Interoperability Sample Tools <small>2010</small></h4>
+    <div class="tags">
+      <span class="label label-info">Europass</span>
+      <span class="label label-info">Tech Management</span> 
+      <span class="label label-info">Java</span> <span class="label label-info">PHP</span>
+    </div>
+    <p>
+      &nbsp;
+    </p>
+
+    <h4>Issue &amp; Project Tracking Streamlining <small>2010</small></h4>
+    <div class="tags">
+      <span class="label label-info">Europass</span> 
+      <span class="label label-info">Admin</span> <span class="label label-info">JIRA</span>
+      <span class="label label-info">GreenHopper</span> <span class="label label-info">MySQL</span>
+    </div>
+    <p>
+      Installed and configured JIRA/GreenHopper (replacing an old Bugzilla instance) to improve the effectiveness 
+      of incident and change management processes as well as to introduce Scrum and Kanban within the Europass team.
+    </p>
+
+    <h4>PhD Theses Archive Management System (PhDMS) <small>2009&ndash;2010</small></h4>
+    <div class="tags">
+      <span class="label label-info">EKT</span> 
+      <span class="label label-info">Lead Dev</span> <span class="label label-info">Groovy</span>
+      <span class="label label-info">Java SE</span> <span class="label label-info">Grails</span> <span class="label label-info">Spring</span> 
+      <span class="label label-info">Spring Security</span> <span class="label label-info">iText</span> <span class="label label-info">JExcelApi</span>
+      <span class="label label-info">OpenCSV</span> <span class="label label-info">jQuery</span> <span class="label label-info">Ajax</span>
+      <span class="label label-info">GORM/Hibernate</span> <span class="label label-info">MySQL</span> <span class="label label-info">Tomcat/Jetty</span>
+    </div>
+    <p>
+      Lead developer of a three-member team responsible for the overall analysis, design and implementation 
+      of a web-based application used by <%= link_to 'EKT', 'http://www.ekt.gr', :target => '_blank' %> 
+      staff members and external stakeholders (universities, PhD students, etc.)
+      to manage the internal workflows (submission, cataloguing, digitisation, archiving, etc.) of 
+      the <%= link_to 'National Archive of PhD Theses', 'http://phdtheses.ekt.gr/eadd/?locale=en', :target => '_blank' %> (EADD).
+      The development efforts, apart from the integration of PhDMS with EADD and another external system via custom HTTP-based APIs, 
+      included a sophisticated reporting engine capable of exporting dynamic reports in various formats (HTML, PDF, RTF, Excel, CSV).
+    </p>
+
+    <h4>Library Order Management System (LibOMS) <small>2009</small></h4>
+    <div class="tags">
+      <span class="label label-info">EKT</span> 
+      <span class="label label-info">Lead Dev</span> <span class="label label-info">Java SE</span>
+      <span class="label label-info">Spring</span> <span class="label label-info">Spring MVC</span> <span class="label label-info">Spring Web Flow</span> 
+      <span class="label label-info">Spring Security</span> <span class="label label-info">Spring TestContext</span> 
+      <span class="label label-info">JSP/JSTL</span> <span class="label label-info">SiteMesh</span>  
+      <span class="label label-info">jQuery</span> <span class="label label-info">Ajax</span> <span class="label label-info">JPA</span> 
+      <span class="label label-info">Hibernate</span> <span class="label label-info">MySQL/Oracle 10g</span> 
+      <span class="label label-info">Tomcat/Jetty</span> <span class="label label-info">JUnit</span> <span class="label label-info">DbUnit</span>
+      <span class="label label-info">Maven</span> 
+    </div>
+    <p>
+      Lead developer of a two-member team responsible for the overall analysis, design and implementation 
+      of a full-fledged Order Management System used by the <%= link_to 'EKT', 'http://www.ekt.gr', :target => '_blank' %> 
+      Library Department for managing orders of scientific articles, conference proceedings, books, etc. by the academic 
+      and research community.
+    </p>
+
+    <h4>FSM Engine <small>2008&ndash;2009</small></h4>
+    <div class="tags">
+      <span class="label label-info">EKT</span> 
+      <span class="label label-success">Open Source</span> <span class="label label-info">Dev</span> <span class="label label-info">Java SE</span>
+      <span class="label label-info">Spring</span> <span class="label label-info">JUnit</span> <span class="label label-info">Maven</span> 
+    </div>
+    <p>
+      Designed and developed a reusable Java library that makes it easy to define and execute finite state machines and workflows
+      using e.g. a Spring XML configuration file. This library, originally inspired by 
+      the <%= link_to 'State Design Pattern', 'http://en.wikipedia.org/wiki/State_pattern', :target => '_blank' %>
+      and <%= link_to 'Harel Statecharts', 'http://www.wisdom.weizmann.ac.il/%7Edharel/papers/Statecharts.pdf', :target => '_blank' %> (pdf),
+      has been extensively utilised by EKT in various large production systems (including the aforementioned LibOMS and PhDMS) and has been
+      open sourced on <%= link_to 'GitHub', 'https://github.com/EKT/FSM-Engine', :target => '_blank' %>.
+    </p>
+
+    <h4>Financial Data Management System <small>2008&ndash;2009</small></h4>
+    <div class="tags">
+      <span class="label label-info">Synergic</span> 
+      <span class="label label-info">Lead Dev</span> <span class="label label-info">Java SE</span>
+      <span class="label label-info">Spring</span> <span class="label label-info">Spring MVC</span> <span class="label label-info">Acegi Security</span>
+      <span class="label label-info">FreeMarker</span> <span class="label label-info">Hibernate</span> <span class="label label-info">Tomcat</span>
+      <span class="label label-info">OC4J</span> <span class="label label-info">Oracle 10g</span>
+    </div>
+    <p>
+      Worked along side a team of two to architect, design and implement a Spring-based application 
+      used in the Greek public sector as part of a larger integrated information system for the electronic 
+      submission of various financial data to the (former) Ministry of Economy and Finance.
+    </p>
+
+    <h4>Data Cleansing Framework <small>2008</small></h4>
+    <div class="tags">
+      <span class="label label-info">EKT</span> 
+      <span class="label label-info">Dev</span> <span class="label label-info">Java SE</span>
+      <span class="label label-info">Spring</span>
+    </div>
+    <p>
+      Integrated Spring into a custom data cleansing/scrubbing framework built by 
+      <%= link_to 'EKT', 'http://www.ekt.gr', :target => '_blank' %> in order to achieve better 
+      maintainability, extensibility and testability.
+    </p>
+
+    <h4>Open Access Map Feeder <small>2008</small></h4>
+    <div class="tags">
+      <span class="label label-info">EKT</span>
+      <span class="label label-info">Dev</span> <span class="label label-info">Java SE</span>
+      <span class="label label-info">JDOM</span>
+    </div>
+    <p>
+      Sole developer of a standalone application used for automatically downloading data from disparate 
+      online sources in XML and plain text formats, parsing, merging and transforming them according to a 
+      suitable XML schema and eventually feeding them to a 
+      <%= link_to 'Flash application', 'http://openaccess.gr/home/map_gl.dot?language_id=1', :target => '_blank' %>.
+    </p>
+
+    <h4>Open Access Portal <small>2008</small></h4>
+    <div class="tags">
+      <span class="label label-info">EKT</span> 
+      <span class="label label-info">Lead Dev</span> <span class="label label-info">J2EE</span>
+      <span class="label label-info">dotCMS</span> <span class="label label-info">Velocity</span>
+      <span class="label label-info">MySQL</span> <span class="label label-info">Tomcat</span>
+    </div>
+    <p>
+      Lead developer of a two-member team responsible for the overall analysis, design and implementation of 
+      <%= link_to 'http://openaccess.gr', 'http://openaccess.gr/?language_id=1', :target => '_blank' %>, a bilingual portal 
+      devoted to Open Access movement advocacy. Responsibilities included the customisation and extension of 
+      dotCMS, a J2EE-based open source CMS on top of which the portal was built (see below).
+    </p>
+
+    <h4>dotCMS <small>2007</small></h4>
+    <div class="tags">
+      <span class="label label-info">EKT</span>
+      <span class="label label-success">Open Source</span> <span class="label label-info">Dev</span>  
+      <span class="label label-info">J2EE</span> <span class="label label-info">Velocity</span>
+    </div>
+    <p>
+      <%= link_to 'DotCMS', 'http://dotcms.com/', :target => '_blank' %> is a J2EE-based Enterprise CMS/Portal suite, 
+      utilising technologies such as Struts, Velocity, DWR, Hibernate and Lucene among others. 
+      Applied a few patches as an active committer, all of which passed into production releases 
+      (rewriting and refactoring of the internationalisation infrastructure to suport UTF-8
+      character encoding, implementation of new features and new Velocity macros, bug fixes).
+    </p>
+
+    <h4>Research Organisations DB <small>2007</small></h4>
+    <div class="tags">
+      <span class="label label-info">EKT</span> 
+      <span class="label label-info">Dev</span> <span class="label label-info">Ruby on Rails</span>
+      <span class="label label-info">MySQL</span> <span class="label label-info">Mongrel</span>
+    </div>
+    <p>
+      Sole developer of a CRUD web application that allows 
+      <%= link_to 'EKT', 'http://www.ekt.gr', :target => '_blank' %> staff members and
+      external partners to maintain a database of research organizations and associated researcher profiles.
+    </p>
+
+    <h4>Nis-Nest DB <small>2007</small></h4>
+    <div class="tags">
+      <span class="label label-info">EKT</span> 
+      <span class="label label-info">Dev</span> <span class="label label-info">Ruby on Rails</span>
+      <span class="label label-info">Oracle 10g</span> <span class="label label-info">Mongrel</span>
+    </div>
+    <p>
+      Maintainer and developer of <%= link_to 'http://researchers.nisnest.gr', 'http://researchers.nisnest.gr', :target => '_blank' %>
+      that acts as a pool of researcher and research organisation profiles, aiming at assisting researchers 
+      from Eastern European countries in identifying and forming potential partnerships.
+    </p>
+
+    <h4>Dewey Terms Translation DB <small>2007</small></h4>
+    <div class="tags">
+      <span class="label label-info">EKT</span> 
+      <span class="label label-info">Dev</span> <span class="label label-info">Ruby on Rails</span>
+      <span class="label label-info">Oracle 10g</span> <span class="label label-info">Mongrel</span>
+    </div>
+    <p>
+      Maintainer and developer of an intranet/extranet application used by 
+      <%= link_to 'EKT', 'http://www.ekt.gr', :target => '_blank' %> staff
+      members and external partners, for translating in Greek the 
+      <%= link_to 'Dewey', 'http://en.wikipedia.org/wiki/Dewey_Decimal_Classification', :target => '_blank' %>
+      decimal classification system (used by libraries).
+    </p>
+
+    <h4>Dewey Terms Cleansing Tool <small>2007</small></h4>
+    <div class="tags">
+      <span class="label label-info">EKT</span> 
+      <span class="label label-info">Dev</span> <span class="label label-info">J2SE</span>
+      <span class="label label-info">DOM4J</span> <span class="label label-info">Ricebridge CSV Manager</span>
+    </div>
+    <p>
+      Sole developer of a standalone tool used for processing/cleaning 
+      <%= link_to 'Dewey', 'http://en.wikipedia.org/wiki/Dewey_Decimal_Classification', :target => '_blank' %> 
+      XML data and converting them to CSV format, so that they can be imported to an Oracle 10g database.
+    </p>
+
+    <h4>ENAT Portal <small>2007</small></h4>
+    <div class="tags">
+      <span class="label label-info">EWORX</span>
+      <span class="label label-info">Dev</span> <span class="label label-info">TOOLIP</span>
+      <span class="label label-info">Servlet</span> <span class="label label-info">FreeMarker</span> <span class="label label-info">Hibernate</span>
+      <span class="label label-info">JUnit</span> <span class="label label-info">MySQL</span> <span class="label label-info">Tomcat</span>
+    </div>
+    <p>
+      Part of an agile two-member team responsible for the overall design and implementation of the
+      <%= link_to 'European Network for Accessbile Tourism', 'http://accessibletourism.org', :target => '_blank' %> portal, 
+      built on top of <%= link_to 'TOOLIP', 'http://toolip.gr', :target => '_blank' %>.
+    </p>
+
+    <h4>TOOLIP CMS <small>2007</small></h4>
+    <div class="tags">
+      <span class="label label-info">EWORX</span>
+      <span class="label label-info">Dev</span> <span class="label label-info">MVC</span>
+      <span class="label label-info">Servlet</span> <span class="label label-info">FreeMarker</span> <span class="label label-info">Hibernate</span>
+      <span class="label label-info">JUnit</span>
+    </div>
+    <p>
+      Participated as a junior programmer in the development of <%= link_to 'TOOLIP', 'http://toolip.gr', :target => '_blank' %>,
+      a custom MVC Framework/CMS used for facilitating the development of web applications within 
+      <%= link_to 'EWORX', 'http://www.eworx.gr', :target => '_blank' %>.
+    </p>
+
+    <h4>Intranet Reporting Engine <small>2006</small></h4>
+    <div class="tags">
+      <span class="label label-info">EWORX</span>
+      <span class="label label-info">Dev</span> <span class="label label-info">MVC</span>
+      <span class="label label-info">Servlet</span> <span class="label label-info">JSP</span> <span class="label label-info">DBCP</span>
+      <span class="label label-info">MySQL</span> <span class="label label-info">Tomcat</span>
+    </div>
+    <p>
+      Sole developer of an intranet reporting engine built on top of a legacy database, 
+      used for generating business reports dynamically, selecting search criteria at run time.  
+    </p>
+
+    <h4>E-Business and the Semantic Web <small>2006&ndash;2007</small></h4>
+    <div class="tags">
+      <span class="label label-info">GRNET</span>
+      <span class="label label-info">Research</span> <span class="label label-info">Technical Writing</span>
+      <span class="label label-info">Semantic Web</span> <span class="label label-info">E-Business</span>
+    </div>
+    <p>
+      Served as rapporteur of the E-Business Forum’s 
+      <%= link_to 'Ιa2 Working Group', 'http://ebusinessforum.gr/teams/teamsall/view/index.php?ctn=100', :target => '_blank' %>, 
+      studying the applicability of the Semantic Web and associated technologies in the context of E-Business. 
+      Written most parts of the 
+      <%= link_to 'final deliverable', 
+          'http://www.ebusinessforum.gr/engine/index.php?op=modload&modname=Downloads&action=downloadsviewfile&ctn=1999&language=el' %> (pdf).
+    </p>
+
+    <h4>Device-independent Web Engineering Study <small>2006</small></h4>
+    <div class="tags">
+      <span class="label label-info">WRC</span> 
+      <span class="label label-info">Research</span> <span class="label label-info">Technical Writing</span> 
+    </div>
+    <p>
+      &nbsp;
+    </p>
+
+    <h4>Traceability Systems Study <small>2006</small></h4>
+    <div class="tags">
+      <span class="label label-info">WRC</span> 
+      <span class="label label-info">Research</span> <span class="label label-info">Technical Writing</span> 
+    </div>
+    <p>
+      &nbsp;
+    </p>
+
+    <h4>Grant Writing <small>2006</small></h4>
+    <div class="tags">
+      <span class="label label-info">WRC</span>
+      <span class="label label-info">Research</span> <span class="label label-info">Grant Writing</span> 
+      <span class="label label-info">Ubiquitous Computing</span>
+    </div>
+    <p>
+      &nbsp;
+    </p>
+
+    <h4>E-Government Portals Study <small>2006</small></h4>
+    <div class="tags">
+      <span class="label label-info">WRC</span>
+      <span class="label label-info">Research</span> <span class="label label-info">Technical Writing</span> 
+      <span class="label label-info">Presentation</span> 
+    </div>
+    <p>
+      &nbsp;
+    </p>
+
+    <h4>Static Web Sites <small>2004&ndash;2005</small></h4>
+    <div class="tags">
+      <span class="label label-info">Dev</span> <span class="label label-info">HTML</span> <span class="label label-info">CSS</span>
+      <span class="label label-info">Apache</span>
+    </div>
+    <p>
+      Built a few simple static HTML/CSS web sites as an amateur web developer on behalf of friends and relatives,
+      including a marketing site for a niche Greek Coffee brand, a marketing site for a bicycle shop and a personal 
+      site for a PhD student.
+    </p>
+
+    <h4>E-Learning Platform <small>2004</small></h4>
+    <div class="tags">
+      <span class="label label-info">MSc IT</span>
+      <span class="label label-info">Dev</span> <span class="label label-info">MVC</span>
+      <span class="label label-info">Servlet</span> <span class="label label-info">JSP</span> <span class="label label-info">MySQL</span> 
+      <span class="label label-info">Tomcat</span>
+    </div>
+    <p>
+      As part of my <%= link_to 'master', 'http://www.gla.ac.uk/postgraduate/taught/informationtechnology/', :target => '_blank' %>'s 
+      dissertation project I developed an innovative e-Learning platform that allows
+      doctors to be trained and collaborate online, by viewing and annotating streaming videos on 
+      PDAs and desktops. The application, which was built as a proof-of-concept prototype on behalf of
+      the BrainIT Group at Glasgow Souther General Hospital, involved the entire software engineering
+      lifecycle, from requirements gaterhing, to analysis, design, implementation, testing and evaluation
+      with real users in a field trial.
+    </p>
+  </div>
+</div>
