@@ -26,12 +26,13 @@ title: Projects
     <h4>dimzava.eu <small>2008&ndash;Present</small></h4>
     <div class="tags">
       <span class="label label-warning">Side Project</span> <span class="label label-info">Middleman</span>
-      <span class="label label-info">Twitter Bootstrap</span> <span class="label label-info">GitHub Pages</span>
+      <span class="label label-info">Bootstrap</span> <span class="label label-info">GitHub Pages</span>
     </div>
     <p>
       The web site you are currently reading. It has gone through many phases since 2008 when it was first created,
       but the latest version is built with the awesome <%= link_to 'Middleman', 'https://middlemanapp.com/', :target => '_blank' %>
-      static site generator and the (ex Twitter) Bootstrap HTML/CSS/JS framework and is served via 
+      static site generator and the <%= link_to 'Bootstrap', 'http://getbootstrap.com/', :target => '_blank' %> 
+      HTML/CSS/JS framework and is served via 
       <%= link_to 'GitHub Pages', 'https://pages.github.com/', :target => '_blank' %>.
     </p>
 
@@ -41,7 +42,8 @@ title: Projects
       <span class="label label-info">Tech Management</span> <span class="label label-info">Scrum</span>
     </div>
     <p>
-      Technical manager and Scrum master of a major project, which resulted in the brand new 
+      Technical manager and Scrum master responsible for all aspects of a major project, which resulted in a brand new,
+      highly acclaimed version of the 
       <%= link_to 'Europass Online Editor', 'https://europass.cedefop.europa.eu/editors', :target => '_blank' %> (launched October 2014).
       The main objectives of this project were to improve the usability of the editor by removing unnecessary features and simplifying
       the user interface, make it responsive so that it can be accessed by mobile devices and make it easy to import/export
@@ -58,8 +60,9 @@ title: Projects
       Oversaw a series of accessibility improvements to the
       <%= link_to 'Europass portal', 'http://europass.cedefop.europa.eu', :target => '_blank' %> 
       successfully leading to <%= link_to 'WCAG 2.0', 'http://www.w3.org/TR/WCAG20/', :target => '_blank' %> (Level A) 
-      compliance and the development of a <%= link_to 'new version', 'http://europass.cedefop.europa.eu/accessibility/en/cv-template/', :target => '_blank' %> 
-      of the Europass CV template and instructions specifically targeted at visually impaired users.
+      compliance and the development of an alternative version of the Europass CV template 
+      <%= link_to 'specifically targeted', 'http://europass.cedefop.europa.eu/accessibility/en/cv-template/', :target => '_blank' %> 
+      at visually impaired users.
     </p>
 
     <h4>Log Aggregation &amp; Analytics Server <small>2014</small></h4>
@@ -94,8 +97,9 @@ title: Projects
       <span class="label label-info">wslite</span> <span class="label label-info">Gradle</span> <span class="label label-info">H2</span>
     </div>
     <p>
-      Built in an afternoon a quick and dirty Ratpack app to demonstrate how the various interoperability options provided by Europass
-      can be used in practice. The application has been open sourced at 
+      Built in an afternoon a quick and dirty <%= link_to 'Ratpack', 'http://www.ratpack.io/', :target => '_blank' %> 
+      app to demonstrate how the various interoperability options provided by Europass can be used in practice. 
+      The application has been open sourced at 
       <%= link_to 'https://github.com/dimzava/europass-interop-demo', 'https://github.com/dimzava/europass-interop-demo', :target => '_blank' %>.
     </p>
 
@@ -121,7 +125,10 @@ title: Projects
     </div>
     <p>
       Created and launched <%= link_to 'https://europass2spreadsheet.eu', 'https://europass2spreadsheet.eu', :target => '_blank' %>,
-      a free online service for converting Europass CVs to Excel spreadsheets via email.
+      a free online service for converting Europass CVs to Excel spreadsheets via email. 
+      It's been built with the <%= link_to 'Ratpack', 'http://www.ratpack.io/', :target => '_blank' %> web toolkit, 
+      integrated with the <%= link_to 'Mailgun', 'http://www.mailgun.com/', :target => '_blank' %> API for sending 
+      and receiving emails and is deployed on <%= link_to 'Heroku', 'https://www.heroku.com/', :target => '_blank' %>.
     </p>
 
     <h4>ErrCode <small>2014</small></h4>
@@ -134,15 +141,15 @@ title: Projects
       <span class="label label-info">MySQL</span>
     </div>
     <p>
-      Designed and implemented a simple web application, which helps the Europass technical support team to easily troubleshoot
+      Designed and implemented a web app, which helps the Europass technical support team to easily troubleshoot
       problems reported by end users. The app downloads log files from remote servers (via SCP and Samba), extracts stack traces 
-      based on a specific string pattern, processes them and stores them in a MySQL database. Technical support
+      based on a given string pattern, processes them and stores them in a MySQL database. Technical support
       can then query the database for a specific error code (provided by the user) and get back the corresponding stack trace
       details via an intuitive web interface. This application has been open sourced at 
       <%= link_to 'https://github.com/dimzava/errcode', 'https://github.com/dimzava/errcode', :target => '_blank' %>.
     </p>
 
-    <h4>Ratpack TechEmpower Benchmarks <small>2014</small></h4>
+    <h4>Ratpack Performance Benchmarks <small>2014</small></h4>
     <div class="tags">
       <span class="label label-warning">Side Project</span> <span class="label label-success">Open Source</span>
       <span class="label label-info">Groovy</span> <span class="label label-info">Ratpack</span>
@@ -152,9 +159,10 @@ title: Projects
       <span class="label label-info">Performance Tuning</span> 
     </div>
     <p>
-      Implemented the <%= link_to 'Ratpack/Groovy portion', 'https://github.com/ratpack/FrameworkBenchmarks/tree/ratpack-dev/frameworks/Java/ratpack', :target => '_blank' %> 
-      of the <%= link_to 'TechEmpower Framework Benchmarks', 'https://www.techempower.com/benchmarks/', :target => '_blank' %> 
-      in close cooperation with the Ratpack team.
+      Implemented in close cooperation with the Ratpack team
+      the <%= link_to 'Ratpack/Groovy portion', 'https://github.com/ratpack/FrameworkBenchmarks/tree/ratpack-dev/frameworks/Java/ratpack', :target => '_blank' %> 
+      of the <%= link_to 'TechEmpower Web Framework Benchmarks', 'https://www.techempower.com/benchmarks/#section=intro', :target => '_blank' %>,
+      a very popular benchmarking test suite for comparing the performance of several web application frameworks.
     </p>
 
     <h4>Europass Cover Letter <small>2014</small></h4>
@@ -164,8 +172,8 @@ title: Projects
       <span class="label label-info">Scrum</span>
     </div>
     <p>
-      Technical manager and Scrum master for the development of the 
-      <%= link_to 'Cover Letter', 'https://europass.cedefop.europa.eu/editors/en/cl/compose', :target => '_blank' %>, 
+      Technical manager and Scrum master of the development of the 
+      <%= link_to 'Europass Cover Letter', 'https://europass.cedefop.europa.eu/editors/en/cl/compose', :target => '_blank' %>, 
       a new document and editor added to the Europass portfolio in April 2014. Active involvement in all stages, from
       inception through to delivery into production.
     </p>
@@ -177,14 +185,14 @@ title: Projects
       <span class="label label-info">Groovy</span> <span class="label label-info">SQL Server</span>
     </div>
     <p>
-      Developed a Groovy command-line program, which verifies the results of a statistics migration project
+      Developed a Groovy command-line program, which verifies the results of a web analytics migration project
       from a legacy AWStats solution to Google Analytics. It works by querying two different databases (one containing
       AWStats data and the other one containing Google Analytics data), comparing the results and
-      printing text-based reports pinpointing differences between the two data sources (diffs in 
+      printing text-based reports pinpointing potential inconsistencies between the two data sources (diffs in 
       absolute numbers, percentages, etc.)
     </p>
 
-    <h4>EURES/Europass REST API Integration <small>2014</small></h4>
+    <h4>Europass/EURES Integration <small>2014</small></h4>
     <div class="tags">
       <span class="label label-info">Europass</span>
       <span class="label label-info">Tech Management</span> 
@@ -192,12 +200,13 @@ title: Projects
       <span class="label label-info">XML</span> <span class="label label-info">JAXB</span>
     </div>
     <p>
-      Led the efforts of the second generation of interoperability between Europass and 
-      <%= link_to 'EURES', 'https://ec.europa.eu/eures', :target => '_blank' %> (The European Job Mobility Portal). 
+      Led the efforts for the second generation of interoperability between Europass and 
+      <%= link_to 'EURES', 'https://ec.europa.eu/eures', :target => '_blank' %> (the first generation was
+      based on older versions of the Europass XML Schema and legacy SOAP APIs). 
       Taking advantage of the Europass XML, Europass users are now able to create a EURES profile/CV by simply 
       uploading a Europass CV to the EURES portal. Likewise, EURES users can export their profile/CV into the
       Europass format, using the Europass REST API under the hood. A JAXB-based client was also developed
-      in frames of this project, to ease the consumption of the Europass REST services by Java clients.
+      in frames of this project, to ease the consumption of the Europass REST services by Java applications.
     </p>
 
     <h4>New Europass Language Passport <small>2013</small></h4>
@@ -207,7 +216,14 @@ title: Projects
       <span class="label label-info">Scrum</span>
     </div>
     <p>
-      &nbsp;
+      Technical manager and Scrum master of the development of a brand new version of the
+      <%= link_to 'Europass Language Passport',
+                  'http://europass.cedefop.europa.eu/en/documents/european-skills-passport/language-passport', 
+                  :target => '_blank' %> (launched December 2013).
+      I was responsible for all aspects of this project, from the design and implementation of the new document 
+      template and 
+      <%= link_to 'online editor', 'https://europass.cedefop.europa.eu/editors/en/lp/compose', :target => '_blank' %>
+      to the final roll-out and end-user support.
     </p>
 
     <h4>Bulk XML Validation <small>2013</small></h4>
