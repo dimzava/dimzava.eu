@@ -261,7 +261,7 @@ title: Projects
       Bootstrapped and led the efforts for the development of the 
       <%= link_to 'Europass REST API', 'http://interop.europass.cedefop.europa.eu/web-services/rest-api-summary', :target => '_blank' %>
       as a technical manager and Scrum master. I still remain actively involved with anything that has to do with
-      this project, including design, versioning, backward compatibility, technical support to integration partners, etc.
+      this project, including design, versioning, backward compatibility, technical support to interoperability partners, etc.
       The REST API (which replaced the now deprecated 
       <%= link_to 'Europass SOAP API', 'http://interop.europass.cedefop.europa.eu/web-services/soap-api/', :target => '_blank' %>) 
       is currently used by many EU and private organisations, universities, open source
@@ -273,32 +273,30 @@ title: Projects
       <span class="label label-info">Europass</span>
       <span class="label label-info">Dev</span> 
       <span class="label label-info">Interoperability</span> <span class="label label-info">Middleman</span>
-      <span class="label label-info">Ruby</span> <span class="label label-info">Twitter Bootstrap</span>
+      <span class="label label-info">Ruby</span> <span class="label label-info">Bootstrap</span>
       <span class="label label-info">Vagrant</span>
     </div>
     <p>
-      Designed and implemented <%= link_to 'http://interop.europass.cedefop.europa.eu', 'http://interop.europass.cedefop.europa.eu', :target => '_blank' %>, 
-      a developer-focused portal with technical information concerning 
-      Europass Interoperability (XML and JSON Schemata, REST and SOAP web services, API documentation, sample applications, etc.).
+      Designed and implemented 
+      <%= link_to 'http://interop.europass.cedefop.europa.eu', 'http://interop.europass.cedefop.europa.eu', :target => '_blank' %>, 
+      a developer-focused portal with technical information concerning Europass Interoperability 
+      (XML and JSON Schemata, REST and SOAP web services, API documentation, sample applications, etc.).
+      It is built with the <%= link_to 'Middleman', 'https://middlemanapp.com/', :target => '_blank' %>
+      static site generator, the <%= link_to 'Bootstrap', 'http://getbootstrap.com/', :target => '_blank' %>
+      front-end framework and an Ubuntu-based development environment created and configured via 
+      <%= link_to 'Vagrant', 'https://www.vagrantup.com/', :target => '_blank' %>.
     </p>
 
-    <h4>Europass Disaster Recovery Infrastructure <small>2013</small></h4>
-    <div class="tags">
-      <span class="label label-info">Europass</span>
-      <span class="label label-info">Tech Management</span> <span class="label label-info">Ops</span> 
-    </div>
-    <p>
-      &nbsp;
-    </p>
-
-    <h4>LibreOffice Management Scripts <small>2012</small></h4>
+    <h4>LibreOffice Management Script <small>2012</small></h4>
     <div class="tags">
       <span class="label label-info">Europass</span>
       <span class="label label-info">Dev</span> 
       <span class="label label-info">Groovy</span>
     </div>
     <p>
-      &nbsp;
+      Developed a simple Groovy script, which starts a preconfigured number of headless
+      <%= link_to 'LibreOffice', 'http://www.libreoffice.org/', :target => '_blank' %>
+      instances, monitors and automatically restarts them in case they crash.
     </p>
 
     <h4>New Europass CV/European Skills Passport <small>2012</small></h4>
@@ -308,7 +306,13 @@ title: Projects
       <span class="label label-info">Scrum</span>
     </div>
     <p>
-      &nbsp;
+      Technical manager and Scrum master of the first major redesign of the
+      <%= link_to 'Europass CV', 'http://europass.cedefop.europa.eu/en/documents/curriculum-vitae', :target => '_blank' %>
+      template and editor since its first launch in 2005 and the development of a new document and editor, the 
+      <%= link_to 'European Skills Passport', 'http://europass.cedefop.europa.eu/en/documents/european-skills-passport', :target => '_blank' %>.
+      Oversaw all aspects of the project, from inception, wireframing and the design of new document templates 
+      to delivery into production, end user support and maintenance. Europass traffic has been increasing rapidly 
+      since this revamp in December 2012.
     </p>
 
     <h4>Server and DB Migration Projects <small>2012</small></h4>
@@ -316,7 +320,8 @@ title: Projects
       <span class="label label-info">Europass</span> <span class="label label-info">Ops</span>
     </div>
     <p>
-      &nbsp;
+      Managed and implemented several server migration projects, physical to physical, physical to virtual, 
+      operating system upgrades, database server upgrades, etc.
     </p>
 
     <h4>Grails E-Shop <small>2012</small></h4>
@@ -334,7 +339,8 @@ title: Projects
       <span class="label label-info">Heroku</span> <span class="label label-info">PostgreSQL</span>
     </div>
     <p>
-      Built a Grails-based RSVP application in frames of my baby daughter's Christening event. The application
+      Built a Grails-based <%= link_to 'RSVP', 'http://en.wikipedia.org/wiki/RSVP_(invitations)', :target => '_blank' %> 
+      application in frames of my baby daughter's Christening event. The application
       was deployed on Heroku using a PostgreSQL database.
     </p>
 
@@ -355,7 +361,11 @@ title: Projects
       <span class="label label-info">Data Migration</span>
     </div>
     <p>
-      &nbsp;
+      Managed the first major redesign of the 
+      <%= link_to 'Europass portal', 'http://europass.cedefop.europa.eu', :target => '_blank' %> 
+      since its first launch in 2005 and the migration of the backing (custom) CMS to a newer version. 
+      Oversaw all aspects of the project, from inception, wireframing and information architecture 
+      through to delivery into production and maintenance.
     </p>
 
     <h4>EMMS/AUTh Interoperability <small>2011</small></h4>
@@ -365,7 +375,13 @@ title: Projects
       <span class="label label-info">Interoperability</span>
     </div>
     <p>
-      &nbsp;
+      Conducted an interoperability study to assess potential synergies between the 
+      <%= link_to 'Europass Mobility Management System', 
+                  'http://europass.cedefop.europa.eu/en/documents/european-skills-passport/europass-mobility', 
+                  :target => '_blank' %> (EMMS) 
+      and the corresponding systems used by the
+      <%= link_to 'Aristotle University of Thessaloniki', 'http://auth.gr/', :target => '_blank' %> (AUTh)
+      for managing student and academic mobility.
     </p>
 
     <h4>Properties2Excel Tool <small>2011</small></h4>
@@ -375,7 +391,8 @@ title: Projects
       <span class="label label-info">Java</span> <span class="label label-info">JExcelApi</span>
     </div>
     <p>
-      &nbsp;
+      Managed the development of a tool used for converting Java properties files to Excel spreadsheets
+      and vice versa.
     </p>
 
     <h4>Europass SOAP API v2 <small>2011</small></h4>
@@ -385,17 +402,11 @@ title: Projects
       <span class="label label-info">SOAP</span> <span class="label label-info">Web Services</span>
     </div>
     <p>
-      &nbsp;
-    </p>
-
-    <h4>EMMS Refinements <small>2010-2011</small></h4>
-    <div class="tags">
-      <span class="label label-info">Europass</span>
-      <span class="label label-info">Tech Management</span> 
-      <span class="label label-info">SOAP</span> <span class="label label-info">Web Services</span>
-    </div>
-    <p>
-      &nbsp;
+      Managed the development and release of the
+      <%= link_to 'second version', 'http://interop.europass.cedefop.europa.eu/web-services/soap-api/', :target => '_blank' %> 
+      of the Europass SOAP API, which extends the conversion services provided by the 
+      <%= link_to 'first version', 'http://interop.europass.cedefop.europa.eu/web-services/soap-api/v1.0/', :target => '_blank' %>
+      of the API by adding support for HR-XML, JSON and HTML formats apart from MS Word, ODT and PDF.
     </p>
 
     <h4>EMMS Deployments <small>2010-2011</small></h4>
@@ -420,7 +431,12 @@ title: Projects
       <span class="label label-info">Interoperability</span>
     </div>
     <p>
-      &nbsp;
+      Coordinated the development of two prototypes assessing how job vacancies published in portals such as 
+      <%= link_to 'EURES', 'https://ec.europa.eu/eures', :target => '_blank' %> and 
+      <%= link_to 'EURAXESS', 'http://ec.europa.eu/euraxess/', :target => '_blank' %>
+      can appear directly in the 
+      <%= link_to 'Europass CV editor', 'https://europass.cedefop.europa.eu/editors', :target => '_blank' %> 
+      and be filtered automatically based on the user's CV data. 
     </p>
 
     <h4>Apache Log Format Converter <small>2010</small></h4>
@@ -448,24 +464,19 @@ title: Projects
       to more than 2.000.000 visits/month and 1.500.000 document generations/month in 2014.
     </p>
 
-    <h4>EURES/Europass SOAP API Integration <small>2010</small></h4>
-    <div class="tags">
-      <span class="label label-info">Europass</span>
-      <span class="label label-info">Tech Management</span>
-      <span class="label label-info">Interoperability</span> <span class="label label-info">SOAP</span>
-    </div>
-    <p>
-      &nbsp;
-    </p>
-
     <h4>Europass Interoperability Sample Tools <small>2010</small></h4>
     <div class="tags">
       <span class="label label-info">Europass</span>
+      <span class="label label-success">Open Source</span>
       <span class="label label-info">Tech Management</span> 
       <span class="label label-info">Java</span> <span class="label label-info">PHP</span>
     </div>
     <p>
-      &nbsp;
+      Managed the development and open sourcing of two Java- and PHP-based
+      <%= link_to 'sample applications', 'http://interop.europass.cedefop.europa.eu/sample-tools/', :target => '_blank' %>,
+      which demonstrate how the
+      <%= link_to 'Europass XML', 'http://interop.europass.cedefop.europa.eu/data-model/xml-resources/', :target => '_blank' %>
+      can be utilised in practice by 3rd party systems.
     </p>
 
     <h4>Issue &amp; Project Tracking Streamlining <small>2010</small></h4>
