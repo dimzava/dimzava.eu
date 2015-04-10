@@ -9,6 +9,7 @@ body {
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
+.resume,
 .footer {
   padding-right: 15px;
   padding-left: 15px;
@@ -45,15 +46,18 @@ body {
 }
 
 /* Supporting marketing content */
-.marketing {
+.marketing,
+.resume {
   /*margin: 40px 0px 40px 0px;*/
   margin-top: 40px;
   margin-bottom: 20px;
 }
-.marketing p {
+.marketing p,
+.resume p {
   margin-bottom: 20px;
 }
-.marketing p + h4 {
+.marketing p + h4,
+.resume p + h4 {
   margin-top: 28px;
 }
 /* Responsive: Portrait tablets and up */
@@ -61,6 +65,7 @@ body {
   /* Remove the padding we set earlier */
   .header,
   .marketing,
+  .resume,
   .footer {
     padding-right: 0;
     padding-left: 0;
@@ -97,12 +102,20 @@ body {
   display: inline-block;
   height: 25px;
 }
-.projects h4 {
+.projects h4,
+.resume h4 {
   margin-bottom: 3px;
 }
-.tags {
+.tags,
+.org {
   margin-bottom: 12px;
 }
 .tags > .label {
   font-weight: normal;
+}
+ul.resume-entries {
+  display: block;
+  list-style-type: none;
+  padding-left: 20px;
+  padding-bottom: 10px;
 }
